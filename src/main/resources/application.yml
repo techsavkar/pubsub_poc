@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    gcp:
+      pubsub:
+        subscriber:
+          max-ack-extension-period: 180
+management:
+  health:
+    pubsub:
+      enabled: false
